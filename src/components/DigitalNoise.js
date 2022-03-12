@@ -1,8 +1,9 @@
 import React from "react"
-import { PlayList } from "./playlist/PlayList"
+import { ExplorePageList } from "./ExplorePage/ExplorePageList"
+
 
 export const DigitalNoise = () => {
     return (
-        <PlayList />
+        <ExplorePageList />
     )
 }
