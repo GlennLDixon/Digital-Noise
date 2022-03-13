@@ -1,9 +1,10 @@
 import React from "react"
 import { Route, Routes, Navigate } from "react-router-dom"
 import { Home } from "./Home"
-import { SearchBar } from "./components/explore/ExploreSearchBar"
+
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
+import ExplorePage from "./components/explore/ExplorePage"
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
@@ -26,7 +27,11 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
                 <Route exact path="/register" element={<Register />} />
 
-                <Route exact path="/Explore" element={<PrivateRoute><SearchBar /></PrivateRoute>} />                
+                <Route exact path="/explore" element={
+                    // <PrivateRoute>
+                        <ExplorePage />
+                    // </PrivateRoute>
+                } />                
 
             </Routes>
         </>
