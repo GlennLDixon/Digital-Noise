@@ -1,9 +1,7 @@
 import React from "react"
-import { Link } from "react-router-dom"
 // import "./Message.css"
 
 export const MessageCard = ({message, handleDeleteMessage}) => {
-    console.log(message)
 
     return (
         <div className="card">

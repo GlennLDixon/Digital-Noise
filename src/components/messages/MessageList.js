@@ -24,9 +24,6 @@ export const MessageList = () => {
         getMessages();
     }, []);
 
-    console.log(myId)
-    console.log(messages)
-
     return(
         <>
             <div className="container-cards">
