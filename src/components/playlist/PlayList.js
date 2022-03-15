@@ -1,31 +1,41 @@
-import {useEffect, useState} from "react"
-import { getPlayLists } from "../../modules/PlayListManager.js"
+import React, { useEffect, useState } from "react";
+import { getTracks, getTracksByArtistAndSong } from "../../modules/PlayListManager.js";
 
 export const PlayList = () => {
-    const [lists, setList] = useState([])
+    const [lists, setList] = useState([]);
+    // const [search, setSearch] = useState({ artist: 'wale', song: 'bad'});
+    const [tracks, setSearchTracks] = useState('bad');
+    // const [artists, setSearchArtists] = useState('Wale');
+    const [isLoading, setIsLoading] = useState(true);
 
-    const getList = () => {
-        console.log(getPlayLists())
-        // return getPlayLists().then(playlistFromApi => {
-        //         console.log(playlistFromApi)
-        //         setList(playlistFromApi)
-        //     })
-        }
-        
-    useEffect(() => {    
-        console.log("hello")
-        getList();
+    // const getSearchedData = () => {
+    //     getPlayList().then((res) => {
+    //         console.log(res);
+    //         setList(res.track);
+    // });
+    // };
+
+    // const getTheTracks = () => {
+    //     getTracks().then((res) => {
+    //         console.log(res)
+    //         setTracks(res)
+    //     })
+    // }
+
+    console.log(tracks)
+
+
+    useEffect(() => {
+        getTracksByArtistAndSong(artistName, trackName)
+        .then(tracks => {
+            setSearchTracks(tracks);
+            setIsLoading(false);
+        })
     }, []);
 
-    console.log(lists)
-
     return (
-        <>
-            <div className="container">
-                {lists}    
-            </div>
-        </>
-    )
-
-
-}
+    <>
+        <div className="container">{lists}</div>
+    </>
+);
+};
