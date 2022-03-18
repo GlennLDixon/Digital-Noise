@@ -4,12 +4,7 @@ export const Home = () => {
 
 return (
     <>
-        <address>
-        Visit Us at the Nashville North Location
-        <br />
-        500 Puppy Way
-        </address>
-        <h1>Animal Spotlight</h1>
+        <h1>Something will go here</h1>
     </>
     );
 };
