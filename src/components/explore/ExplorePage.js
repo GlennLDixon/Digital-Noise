@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ExploreSongList  from "./ExploreSongList"
-import { getTracksByArtistAndSong } from '../../modules/PlayListManager';
+import { getTracksByArtistAndSong } from '../../modules/ExploreManager';
 
 const ExplorePage = () => {
   const [tracks, setReturnedTracks] = useState([]);
@@ -8,15 +8,13 @@ const ExplorePage = () => {
   const [artist, setSearchArtist] = useState('');
   const [song, setSearchSong] = useState('');
 
+  const explorePageContent = tracks === null ? <h1>Can not find song</h1> : <ExploreSongList tracks={tracks} />
+
+
+  // Submit button worked once and now it's not able to read value property.
   const handleSearchInputChange = (event) => {
     event.preventDefault() // Prevents the browser from submitting the form
 
-    console.log(event.target.text.value)
-
-  }
-  
-
-  useEffect(() => {
     if (artist !== '' && song !== '') {
       getTracksByArtistAndSong(artist, song)
       .then(tracks => {
@@ -25,12 +23,17 @@ const ExplorePage = () => {
           setIsLoading(false);
       })
     }
+
+  }
+
+  useEffect(() => {
+    
     }, []);
 
   return (
     <div>
       <h1>Explore Page</h1>
-      {/* Input form to help search songs */}
+      {/* Input form to help search for current artits */}
       <section className='section-searchBar'>
         {/* <form action=""> */}
           <input type="text"
@@ -39,19 +42,21 @@ const ExplorePage = () => {
               setSearchArtist(event.target.value)
             }}
           />
+        {/* Input form to help search for current song */}
           <input type="text"
             placeholder="Song name..."
             onChange={(event) => {
             setSearchSong(event.target.value)
             }}
           />
+          {/* Button that will submit the users values in the input*/}
           <button className='btn btn-primary'
           type='submit'
           onClick={handleSearchInputChange}
           >Search</button>
         {/* </form> */}
       </section>
-        <ExploreSongList tracks={tracks} />
+        {explorePageContent}
     </div>
   )
 }
