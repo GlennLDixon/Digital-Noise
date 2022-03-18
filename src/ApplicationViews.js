@@ -5,6 +5,8 @@ import { Home } from "./Home"
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
 import ExplorePage from "./components/explore/ExplorePage"
+import { MessagePage } from "./components/messages/MessagePage"
+import { ProfilePage } from "./components/profile/profilePage"
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
@@ -26,12 +28,25 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
                 <Route exact path="/login" element={<Login setAuthUser={setAuthUser} />} />
 
                 <Route exact path="/register" element={<Register />} />
+                
+                <Route exact path="/messages" element={
+                    // <PrivateRoute>
+                        <MessagePage />
+                    // </PrivateRoute>
+                } />                
+
+                <Route exact path="/profile" element={
+                    // <PrivateRoute>
+                        <ProfilePage />
+                    // </PrivateRoute>
+                } />                
 
                 <Route exact path="/explore" element={
                     // <PrivateRoute>
                         <ExplorePage />
                     // </PrivateRoute>
                 } />                
+                
 
             </Routes>
         </>
