@@ -17,7 +17,7 @@ export const UserCard = ({ user, followUser}) => {
         getFriends().then(friends => {
             setFriends(friends);
         });
-    }, [friends]);
+    }, []);
     
     return (
         <div className="UserCard">
