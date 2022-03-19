@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { addFriend } from '../../modules/FriendsManager';
 import { getUsers } from '../../modules/UserManager';
-import { getFriends } from '../../modules/FriendsManager';
 import { UserCard } from './UserCard';
 
 export const UserList = () => {
