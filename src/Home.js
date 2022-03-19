@@ -1,15 +1,10 @@
-import React from "react";
+import { UserList } from "./components/users/UserList"
 
 export const Home = () => {
-
 return (
     <>
-        <address>
-        Visit Us at the Nashville North Location
-        <br />
-        500 Puppy Way
-        </address>
-        <h1>Animal Spotlight</h1>
+        <UserList />
+        <h1>Something will go here</h1>
     </>
     );
 };
