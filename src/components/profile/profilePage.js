@@ -1,6 +1,7 @@
 import React from 'react'
 import { FriendList } from '../friends/FriendList'
-import { PlayListForm } from './NewPlayListForm'
+import { PlayListForm } from '../playlist/NewPlayListForm'
+import { PlayList } from '../playlist/PlayList'
 
 export const ProfilePage = () => {
 
@@ -8,6 +9,7 @@ export const ProfilePage = () => {
         <>
         <PlayListForm />
         <FriendList />
+        <PlayList />
         </>
     )
 }
