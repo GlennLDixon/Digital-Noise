@@ -1,5 +1,3 @@
-import React, {useEffect, useState} from 'react';
-import {getTracksByArtistAndSong } from "../../modules/ExploreManager.js";
 import { ExploreSongCard } from './ExploreSongCard.js';
 
 const ExploreSongList = ({tracks}) => {
