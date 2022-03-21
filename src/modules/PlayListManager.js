@@ -1,11 +1,23 @@
+const remoteURL = 'http://localhost:8088'
+
 const apiKey = process.env.REACT_APP_GLENN
 const apiHost = "theaudiodb.p.rapidapi.com"
 const apiUrl = "https://theaudiodb.p.rapidapi.com"
 
-export const getTracksByArtistAndSong = async (artistName, trackName) => {
+export const getPlayLists = () => {
+	return fetch(`${remoteURL}/playlist`)
+		.then(res => res.json());
+} 
+
+export const getPlayListById = (playListId) => {
+	return fetch(`${remoteURL}/playlist/${playListId}`)
+		.then(res => res.json());
+}
+
+export const getTrackById = async (trackId) => {
 	try {
 		const response = await fetch(
-			`${apiUrl}/searchtrack.php?s=${artistName}&t=${trackName}`, {
+			`${apiUrl}/track.php?h=${trackId}`, {
 			"method": "GET",
 			"headers": {
 				"x-rapidapi-host": apiHost,
@@ -21,23 +33,3 @@ export const getTracksByArtistAndSong = async (artistName, trackName) => {
 			console.log(error);
 		}
 };
-
-
-// export const getTracks = async (trackId) => {
-// 	try {
-// 	const response = await fetch(
-// 		`${apiUrl}track.php?h=${trackId}`,
-// 		{
-// 		method: "GET",
-// 		headers: {
-// 			"x-rapidapi-host": apiHost,
-// 			"x-rapidapi-key": apiKey
-// 		},
-// 	});
-
-// 	const data = await response.json();
-// 	return data;
-// 	} catch (error) {
-// 		console.log(error);
-// 	}
-// };
