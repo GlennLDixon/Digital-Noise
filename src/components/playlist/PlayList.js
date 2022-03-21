@@ -1,41 +1,37 @@
-import React, { useEffect, useState } from "react";
-import { getTracks, getTracksByArtistAndSong } from "../../modules/PlayListManager.js";
+import React, { useState,useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { getPlayLists } from '../../modules/PlayListManager'
+import { PlayListCard } from './PlayListCard'
 
 export const PlayList = () => {
-    const [lists, setList] = useState([]);
-    // const [search, setSearch] = useState({ artist: 'wale', song: 'bad'});
-    const [tracks, setSearchTracks] = useState('bad');
-    // const [artists, setSearchArtists] = useState('Wale');
-    const [isLoading, setIsLoading] = useState(true);
-
-    // const getSearchedData = () => {
-    //     getPlayList().then((res) => {
-    //         console.log(res);
-    //         setList(res.track);
-    // });
-    // };
-
-    // const getTheTracks = () => {
-    //     getTracks().then((res) => {
-    //         console.log(res)
-    //         setTracks(res)
-    //     })
-    // }
-
-    console.log(tracks)
+    const [playlists, setPlayLists] = useState([])
 
 
     useEffect(() => {
-        getTracksByArtistAndSong(artistName, trackName)
-        .then(tracks => {
-            setSearchTracks(tracks);
-            setIsLoading(false);
+        getPlayLists().then(playlists => {
+            setPlayLists(playlists)
         })
-    }, []);
+    }, [])
+    console.log(playlists)
 
     return (
-    <>
-        <div className="container">{lists}</div>
-    </>
-);
-};
+        <div className="container">
+            <div className="title-wrapper">
+                <h1><span>PlayList</span></h1>
+            </div>
+            <div>
+                <div className="container-cards">
+                    <section className="playlist-list">
+                        {playlists.map(list => 
+                                <PlayListCard 
+                                    key={list.id}
+                                    list={list}
+                                />
+                            )
+                        }
+                    </section>
+                </div>
+            </div>
+        </div>
+    )
+}
