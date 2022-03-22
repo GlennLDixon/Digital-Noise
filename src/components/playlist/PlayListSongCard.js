@@ -1,13 +1,13 @@
 import React from "react"
 
-export const PlayListSongCard = ({trackId, albumArt,trackTitle, albumTitle, trackDuration}) => { 
+export const PlayListSongCard = ({tracks}) => { 
 return (
-    <div key={trackId}>
+    <div>
         <div className="SongList-checkmark"></div>
-        <img className="SongList-albumArt"src={albumArt} />
-        <div className="SongList-trackTitle">{trackTitle}</div>
-        <div className="SongList-albumTitle">{albumTitle}</div>
-        <div className="SongList-trackDuration">{trackDuration}</div> {/** Convert to mins and secs*/}
+        <img className="SongList-albumArt"src={tracks.strTrackThumb} />
+        <div className="SongList-trackTitle">{tracks.strTrack}</div>
+        <div className="SongList-albumTitle">{tracks.strAlbum}</div>
+        <div className="SongList-trackDuration">{tracks.intDuration}</div> {/** Convert to mins and secs*/}
     </div>
     )
 }
