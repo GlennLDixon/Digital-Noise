@@ -8,6 +8,7 @@ import ExplorePage from "./components/explore/ExplorePage"
 import { MessagePage } from "./components/messages/MessagePage"
 import { ProfilePage } from "./components/profile/profilePage"
 import { PlayListDetails } from "./components/playlist/PlayListDetails"
+import { PlayList } from "./components/playlist/PlayList"
 
 export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
 
@@ -41,7 +42,7 @@ export const ApplicationViews = ({ isAuthenticated, setIsAuthenticated }) => {
                         <ProfilePage />
                     // </PrivateRoute>
                 } /> 
-
+                <Route path="/playlist" element={<PlayList />} />
                 <Route path="/playlist/:id" element={<PlayListDetails />} />            
 
                 <Route exact path="/explore" element={
