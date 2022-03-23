@@ -19,9 +19,6 @@ export const PlayListDetails = () => {
             setPlayList(list);
         });
         setIsLoading(false);
-        // getTrackById().then(apiTrackId => {
-            //     setReturnedTrackId(apiTrackId)
-        // })
     }, []);
 
     
@@ -29,12 +26,12 @@ export const PlayListDetails = () => {
     return (
         <>
         <div className="playListContainer">
-            {playList.tracks.map((track) => {
-            return <PlayListSongCard
+            {playList.tracks.map((track) =>
+            <PlayListSongCard
                     key={track.id}    
                     tracks={track}
                 />
-            })}
+            )}
             
         </div>
         </>
