@@ -6,7 +6,7 @@ import { addMessage, getUsers } from '../../modules/MessageManager';
 export const MessageForm = () => {
 	// State will contain both location data as well as an isLoading flag.
 	// Define the initial state of the form inputs with useState()
-
+	
 	const [message, setMessage] = useState({
 		senderName: JSON.parse(sessionStorage.getItem("digital_user")).name,
 		receiverId: JSON.parse(sessionStorage.getItem("digital_user")).id,
@@ -53,7 +53,7 @@ export const MessageForm = () => {
 			window.alert("Please Select")
 		} else {
         addMessage(message)
-            .then(() => navigate("/messages"))
+		.then(() => navigate("/messages"))
         }
 	}
 	
