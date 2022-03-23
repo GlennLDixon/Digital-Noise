@@ -16,8 +16,6 @@ export const FriendList = () => {
                 .then(remainingFriends => setFriends(remainingFriends)));
     }
 
-    console.log(friends)
-
     useEffect(() => {
         getFriends().then(friends => {
             setFriends(friends)
