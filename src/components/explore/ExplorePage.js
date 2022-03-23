@@ -10,7 +10,6 @@ const ExplorePage = () => {
 
   const explorePageContent = tracks === null ? <h1>Can not find song</h1> : <ExploreSongList tracks={tracks} />
 
-
   // Submit button worked once and now it's not able to read value property.
   const handleSearchInputChange = (event) => {
     event.preventDefault() // Prevents the browser from submitting the form
@@ -37,6 +36,7 @@ const ExplorePage = () => {
       <section className='section-searchBar'>
         {/* <form action=""> */}
           <input type="text"
+          className=''
             placeholder="Artist..."
             onChange={(event) => {
               setSearchArtist(event.target.value)
@@ -44,6 +44,7 @@ const ExplorePage = () => {
           />
         {/* Input form to help search for current song */}
           <input type="text"
+          className=''
             placeholder="Song name..."
             onChange={(event) => {
             setSearchSong(event.target.value)
