@@ -18,6 +18,7 @@ const ExploreSongList = ({tracks}) => {
                         trackId={track.idTrack}
                         albumArt={track.strTrackThumb}
                         trackTitle={track.strTrack}
+                        trackArtist={track.strArtist}
                         albumTitle={track.strAlbum}
                         trackDuration={track.intDuration}
                     />
