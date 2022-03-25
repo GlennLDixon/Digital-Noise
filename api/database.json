@@ -1,0 +1,292 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Glenn Dixon",
+      "email": "me@me.com"
+    },
+    {
+      "id": 2,
+      "name": "Austin Cumberlander",
+      "email": "we@we.com"
+    },
+    {
+      "id": 3,
+      "name": "Audie Bulfoy",
+      "email": "abulfoy2@t.co"
+    },
+    {
+      "id": 4,
+      "name": "Lauren Meddows",
+      "email": "lmeddows3@virginia.edu"
+    },
+    {
+      "id": 6,
+      "name": "Boothe Bulbeck",
+      "email": "bbulbeck5@google.com.hk"
+    },
+    {
+      "id": 7,
+      "name": "Abran Ethelstone",
+      "email": "aethelstone6@apple.com"
+    },
+    {
+      "id": 8,
+      "name": "Cherrita Gamble",
+      "email": "cgamble7@odnoklassniki.ru"
+    },
+    {
+      "id": 9,
+      "name": "Elonore Gordon",
+      "email": "egordon8@pcworld.com"
+    },
+    {
+      "id": 10,
+      "name": "Ladonna Doorbar",
+      "email": "ldoorbar9@miitbeian.gov.cn"
+    }
+  ],
+  "playlisttracks": [
+    {
+      "playlistsId": 0,
+      "idTrack": "34055285",
+      "strTrack": "Loyal",
+      "strAlbum": "X",
+      "strArtist": "Chris Brown",
+      "strTrackThumb": "https://www.theaudiodb.com/images/media/track/thumb/xxvtxs1582924711.jpg",
+      "intDuration": "0",
+      "id": 1
+    },
+    {
+      "playlistsId": 0,
+      "idTrack": "34055285",
+      "strTrack": "Loyal",
+      "strAlbum": "X",
+      "strArtist": "Chris Brown",
+      "strTrackThumb": "https://www.theaudiodb.com/images/media/track/thumb/xxvtxs1582924711.jpg",
+      "intDuration": "0",
+      "id": 2
+    },
+    {
+      "playlistsId": 2,
+      "idTrack": "34055285",
+      "strTrack": "Loyal",
+      "strAlbum": "X",
+      "strArtist": "Chris Brown",
+      "strTrackThumb": "https://www.theaudiodb.com/images/media/track/thumb/xxvtxs1582924711.jpg",
+      "intDuration": "0",
+      "id": 3
+    },
+    {
+      "playlistsId": 1,
+      "idTrack": "34055285",
+      "strTrack": "Loyal",
+      "strAlbum": "X",
+      "strArtist": "Chris Brown",
+      "strTrackThumb": "https://www.theaudiodb.com/images/media/track/thumb/xxvtxs1582924711.jpg",
+      "intDuration": "0",
+      "id": 4
+    },
+    {
+      "playlistsId": 0,
+      "idTrack": "34789333",
+      "strTrack": "DNA.",
+      "strAlbum": "DAMN.",
+      "strArtist": "Kendrick Lamar",
+      "strTrackThumb": "https://www.theaudiodb.com/images/media/track/thumb/rxuyts1492943023.jpg",
+      "intDuration": "185947",
+      "receiverId": 2,
+      "id": 5
+    },
+    {
+      "playlistsId": 3,
+      "idTrack": "34789333",
+      "strTrack": "DNA.",
+      "strAlbum": "DAMN.",
+      "strArtist": "Kendrick Lamar",
+      "strTrackThumb": "https://www.theaudiodb.com/images/media/track/thumb/rxuyts1492943023.jpg",
+      "intDuration": "185947",
+      "receiverId": 2,
+      "id": 6
+    },
+    {
+      "playlistsId": 2,
+      "idTrack": "34789333",
+      "strTrack": "DNA.",
+      "strAlbum": "DAMN.",
+      "strArtist": "Kendrick Lamar",
+      "strTrackThumb": "https://www.theaudiodb.com/images/media/track/thumb/rxuyts1492943023.jpg",
+      "intDuration": "185947",
+      "receiverId": 2,
+      "id": 7
+    },
+    {
+      "playlistsId": 1,
+      "idTrack": "34789333",
+      "strTrack": "DNA.",
+      "strAlbum": "DAMN.",
+      "strArtist": "Kendrick Lamar",
+      "strTrackThumb": "https://www.theaudiodb.com/images/media/track/thumb/rxuyts1492943023.jpg",
+      "intDuration": "185947",
+      "receiverId": 2,
+      "id": 8
+    }
+  ],
+  "playlist": [
+    {
+      "title": "Workout",
+      "CreatorName": "Glenn Dixon",
+      "activeUserId": 1,
+      "DateCreated": "3/19/2022",
+      "id": 1
+    },
+    {
+      "title": "NewPlayList",
+      "CreatorName": "Glenn Dixon",
+      "activeUserId": 1,
+      "DateCreated": "3/20/2022",
+      "tracks": [],
+      "id": 2
+    },
+    {
+      "title": "PlayList",
+      "CreatorName": "Glenn Dixon",
+      "activeUserId": 1,
+      "DateCreated": "3/20/2022",
+      "tracks": [],
+      "id": 3
+    }
+  ],
+  "messages": [
+    {
+      "senderName": "",
+      "receiverId": 1,
+      "title": "This still works",
+      "message": "yes it does",
+      "activeUserId": 1,
+      "id": 1
+    },
+    {
+      "senderName": "Glenn Dixon",
+      "receiverId": 2,
+      "title": "Hello World",
+      "message": "Hello",
+      "activeUserId": 1,
+      "id": 2
+    },
+    {
+      "senderName": "Glenn Dixon",
+      "receiverId": 1,
+      "title": "This still works",
+      "message": "Indeed it does",
+      "activeUserId": 1,
+      "id": 3
+    },
+    {
+      "senderName": "Glenn Dixon",
+      "receiverId": 1,
+      "title": "This should Work",
+      "message": "Do you work?",
+      "activeUserId": 1,
+      "id": 4
+    },
+    {
+      "senderName": "Glenn Dixon",
+      "receiverId": 1,
+      "title": "New Message",
+      "message": "Lets post",
+      "activeUserId": 1,
+      "id": 5
+    },
+    {
+      "senderName": "Glenn Dixon",
+      "receiverId": 1,
+      "title": "New Message",
+      "message": "Yes Sir",
+      "activeUserId": 1,
+      "id": 6
+    },
+    {
+      "senderName": "Glenn Dixon",
+      "receiverId": 6,
+      "title": "We going to make it work",
+      "message": "Yea don't worry",
+      "activeUserId": 1,
+      "id": 7
+    },
+    {
+      "senderName": "Glenn Dixon",
+      "receiverId": 1,
+      "title": "New message",
+      "message": "New Message",
+      "activeUserId": 1,
+      "id": 8
+    },
+    {
+      "senderName": "Glenn Dixon",
+      "receiverId": 2,
+      "title": "Austin",
+      "message": "Austin",
+      "activeUserId": 1,
+      "id": 9
+    },
+    {
+      "senderName": "Austin Cumberlander",
+      "receiverId": 1,
+      "title": "What's up",
+      "message": "What's up",
+      "activeUserId": 2,
+      "id": 10
+    },
+    {
+      "idTrack": "Glenn Dixon",
+      "strTrack": 1,
+      "strAlbum": "",
+      "strArtist": "",
+      "intDuration": 1,
+      "receiverId": 1,
+      "id": 11
+    },
+    {
+      "idTrack": "Glenn Dixon",
+      "strTrack": 1,
+      "strAlbum": "",
+      "strArtist": "",
+      "intDuration": 1,
+      "receiverId": 2,
+      "id": 12
+    }
+  ],
+  "friends": [
+    {
+      "id": 4,
+      "name": "Lauren Meddows",
+      "email": "lmeddows3@virginia.edu",
+      "activeUserId": 1
+    },
+    {
+      "id": 1,
+      "name": "Glenn Dixon",
+      "email": "me@me.com",
+      "activeUserId": 1
+    },
+    {
+      "id": 2,
+      "name": "Austin Cumberlander",
+      "email": "we@we.com",
+      "activeUserId": 1
+    },
+    {
+      "id": 3,
+      "name": "Audie Bulfoy",
+      "email": "abulfoy2@t.co",
+      "activeUserId": 1
+    },
+    {
+      "id": 8,
+      "name": "Cherrita Gamble",
+      "email": "cgamble7@odnoklassniki.ru",
+      "activeUserId": 1
+    }
+  ]
+}

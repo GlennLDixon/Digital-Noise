@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.SongCard {
+    background-color: black;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.SongCard-albumArt{
+    height: 270px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.SongCard-text {
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+    background: hsla(234, 77%, 43%, 1);
+    background: linear-gradient(45deg, hsla(234, 77%, 43%, 1) 0%, hsla(198, 63%, 67%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(234, 77%, 43%, 1) 0%, hsla(198, 63%, 67%, 1) 100%);    
+    background: -webkit-linear-gradient(45deg, hsla(234, 77%, 43%, 1) 0%, hsla(198, 63%, 67%, 1) 100%);
+
+}
+
+.SongCard-play {
+    color: white;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin: 5px 0 0 170px;
+}
+
+.SongCard-albumTitle, .SongCard-trackDuration, .SongCard-trackTitle {
+    font-size: 1.4rem;
+    font-family: 'Saira', sans-serif;
+    font-weight: 600;
+    color: white;
+    padding: 5px 0 5px 10px;
+}
+
+.SongCard-trackDuration {
+    font-size: 1.1rem;
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    color: white;
+    padding: 5px 0 5px 10px;
+}
+
+span {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
