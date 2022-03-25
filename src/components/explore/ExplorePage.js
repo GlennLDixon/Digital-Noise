@@ -36,7 +36,7 @@ const ExplorePage = () => {
       <section className='section-searchBar'>
         {/* <form action=""> */}
           <input type="text"
-          className=''
+          className='searchBar-Artist'
             placeholder="Artist..."
             onChange={(event) => {
               setSearchArtist(event.target.value)
@@ -44,7 +44,7 @@ const ExplorePage = () => {
           />
         {/* Input form to help search for current song */}
           <input type="text"
-          className=''
+          className='searchBar-Song'
             placeholder="Song name..."
             onChange={(event) => {
             setSearchSong(event.target.value)

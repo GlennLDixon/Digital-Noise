@@ -9,7 +9,7 @@ export const getTracksByArtistAndSong = async (artistName, trackName) => {
 			"method": "GET",
 			"headers": {
 				"x-rapidapi-host": apiHost,
-				// "x-rapidapi-key": apiKey
+				"x-rapidapi-key": apiKey
 			}
 		});
 		
