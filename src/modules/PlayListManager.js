@@ -33,3 +33,18 @@ export const getTrackById = async (trackId) => {
 			console.log(error);
 		}
 };
+
+export const getPlayListTracksById = (id) => {
+	return fetch(`${remoteURL}/playListTracks?_expand=idtrack&playlistsId=${id}`)
+	.then(res => res.json());
+}
+
+export const addTrack = (newTrack) => {
+    return fetch(`${remoteURL}/playlisttracks`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newTrack)
+    }).then(response => response.json())
+}
