@@ -9,10 +9,10 @@ export const UserCard = ({ user, followUser}) => {
     
     const handleDeleteFriend = id => {
         deleteFriend(id)
-            .then(() => getFriends()
-                .then(remainingFriends => setFriends(remainingFriends)));
+        .then(() => getFriends()
+        .then(remainingFriends => setFriends(remainingFriends)));
     }
-
+    
     useEffect(() => {
         getFriends().then(friends => {
             setFriends(friends);

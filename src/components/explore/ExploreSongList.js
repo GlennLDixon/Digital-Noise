@@ -1,5 +1,3 @@
-import React, {useEffect, useState} from 'react';
-import {getTracksByArtistAndSong } from "../../modules/ExploreManager.js";
 import { ExploreSongCard } from './ExploreSongCard.js';
 
 const ExploreSongList = ({tracks}) => {
@@ -20,6 +18,7 @@ const ExploreSongList = ({tracks}) => {
                         trackId={track.idTrack}
                         albumArt={track.strTrackThumb}
                         trackTitle={track.strTrack}
+                        trackArtist={track.strArtist}
                         albumTitle={track.strAlbum}
                         trackDuration={track.intDuration}
                     />

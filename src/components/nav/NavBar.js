@@ -7,7 +7,8 @@ export const NavBar = ({ clearUser, isAuthenticated }) => {
 
     const handleLogout = () => {
         clearUser();
-        history.push('/');
+        history('/');
+        
     }
 
     return (
